@@ -31,21 +31,65 @@ This key contains the **configuration data** for the element. It includes:
 - **Layout & spacing:** Padding, margin, alignment, width, height, responsiveness, etc.
 - **Behavioral props:** Like `iconPosition`, `fillType`, or conditional visibility (`showOnMobile`, `showOnTablet`).
 
-Together, `type` and `value` allow you to describe both **what** an element is and **how** it should look and behave.
+> ⚠️ **Important:** Every `value` object must include an `_id` key (a unique string identifier).  
+> Without `_id`, the editor will crash when rendering the element. This applies to all elements, containers, and nested children.
 
-### Summary
+---
+
+## Default Values
+
+Every Brizy element has its own **default value** schema defined in the editor.  
+This means you **don’t need to provide the full set of keys** when defining an element—only the properties you want to override or change.
+
+When rendering the page, Brizy will **automatically fill in any missing keys** with the default values for that specific element.
+
+> 📌 At the **bottom of each element’s documentation page**, you’ll find the full default value JSON used by the editor for that element. This helps you understand which keys are optional and what values are assumed if omitted.
+
+---
+
+## Responsive Design in Brizy
+
+Brizy is a **fully responsive editor**. Many style options can be customized **independently** for desktop, tablet, and mobile views.  
+To apply different values for each device, you use **prefixes** for the key names:
+
+### Device-Specific Prefixes
+
+- **Desktop:** No prefix (default)  
+  Example: `paddingTop`, `fontSize`
+- **Tablet:** Add `tablet` prefix  
+  Example: `tabletPaddingTop`, `tabletFontSize`
+- **Mobile:** Add `mobile` prefix  
+  Example: `mobilePaddingTop`, `mobileFontSize`
+
+This allows you to fine-tune the layout and typography for each device viewport individually.
+
+---
+
+### Hover States
+
+To define **hover styles**, you also use prefixed keys, but **only for desktop** (tablet and mobile do not support hover):
+
+- `colorHex` → `hoverColorHex`
+- `bgColorHex` → `hoverBgColorHex`
+- `borderColorHex` → `hoverBorderColorHex`
+
+This allows you to change styling when the user hovers with their mouse on desktop devices.
+
+---
+
+## Summary
 
 - Brizy Elements are JSON-defined UI blocks.
 - Every element has a `type` and `value`.
-- `type` defines what it is.
-- `value` defines how it looks, behaves, and what children it contains.
-- Complex layouts are built by nesting elements inside each other using the `items` array.
+- `value` must include an `_id`.
+- Brizy supports responsive and hover styling via suffixes.
+- You only need to define keys you want to customize—defaults are filled in automatically.
+- Complex layouts are built by nesting elements using the `items` array.
 
 This structured format allows Brizy to offer a flexible and consistent editing experience while maintaining clear separation between content, layout, and style.
 
+---
 
 ### What's Next
 
-In the next sections, we’ll explore each Brizy element in detail—one by one. You’ll learn what each `type` represents, what keys are expected in their `value` objects, and how they are rendered on the page.
-
-This will help you better understand how to work with `PageData`, customize layouts, and even build your own custom elements if needed.
+In the next sections, we’ll explore each Brizy element in detail—one by one. You’ll learn what each `type` represents, what keys are expected in their `value` objects, how defaults are handled, and how they are rendered on the page.

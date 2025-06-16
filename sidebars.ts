@@ -32,6 +32,8 @@ const sidebars: SidebarsConfig = {
         },
         "elements/icon",
         "elements/button",
+        "elements/image",
+        "elements/richtext",
       ],
     },
   ],
