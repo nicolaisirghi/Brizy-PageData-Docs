@@ -41,10 +41,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
           showReadingTime: true,
@@ -52,10 +48,6 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // Useful options to enforce blogging best practices
           onInlineTags: "warn",
           onInlineAuthors: "warn",
@@ -70,15 +62,16 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/social-card.webp",
     navbar: {
       logo: {
         alt: "Brizy Logo",
         src: "img/logo.svg",
+        href: "https://brizy.io",
       },
       items: [
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/EasyBrizy/Brizy-Local-Editor",
           label: "GitHub",
           position: "right",
         },
@@ -86,7 +79,7 @@ const config: Config = {
     },
     footer: {
       style: "dark",
-      copyright: `Copyright © ${new Date().getFullYear()} Brizy Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Brizy`,
     },
     prism: {
       theme: prismThemes.github,
