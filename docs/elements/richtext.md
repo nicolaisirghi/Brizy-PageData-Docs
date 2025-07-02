@@ -14,7 +14,7 @@ more.
   "type": "RichText",
   "value": {
     "_id": "unique-id",
-    "html": "<p class=\"brz-tp-lg-paragraph\" data-uniq-id=\"eJfVa\" data-generated-css=\"brz-css-zb6vh\"><span class=\"brz-cp-color7\">The point of using dummy text for your paragrcaph is that it has a more-or-less normal distribution of letters. making it look like readable English.</span></p>"
+    "text": "<p class=\"brz-tp-lg-paragraph\" data-uniq-id=\"eJfVa\" data-generated-css=\"brz-css-zb6vh\"><span class=\"brz-cp-color7\">The point of using dummy text for your paragrcaph is that it has a more-or-less normal distribution of letters. making it look like readable English.</span></p>"
   }
 }
 ```
