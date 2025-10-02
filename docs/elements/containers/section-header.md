@@ -46,6 +46,15 @@ The `SectionHeader` is a special section used for headers. It uses the same gene
   - "animated" means it scrolls with the page.
   - "static" means it does not change position on scroll.
 
+### Styles key for SectionHeader
+
+The `styles` key is used to apply CSS classes to the `SectionHeader` element.
+```json
+{
+  "styles": ["sectionHeader"]
+}
+```
+
 ## Keys and Values Applied to SectionHeaderItem and SectionHeaderStickyItem
 
 ### Padding
@@ -172,6 +181,24 @@ The `background` keys define the appearance of the section’s background, inclu
   "bgPosition": "50% 50%",
   "bgRepeat": "off",
   "bgAttachment": "none"
+}
+```
+
+### Styles key for SectionHeaderItem 
+
+The `styles` key is used to apply CSS classes to the `SectionHeaderItem` element.
+```json
+{
+  "styles": ["sectionHeaderItem"]
+}
+```
+
+### Styles key for SectionHeaderStickyItem
+
+The `styles` key is used to apply CSS classes to the `SectionHeaderStickyItem` element.
+```json
+{
+  "styles": ["sectionHeaderStickyItem"]
 }
 ```
 

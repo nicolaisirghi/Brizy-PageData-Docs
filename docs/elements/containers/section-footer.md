@@ -26,6 +26,16 @@ The `SectionFooter` is a special section used specifically for footers. While it
 
 The `padding` keys define the space inside the section, between its content and its border. Padding values can be uniform or individual for each side, and are typically paired with a suffix to define the unit.
 
+### Styles key
+
+The `styles` key is used to apply CSS classes to the `SectionFooter` element.
+
+```json
+{
+  "styles": ["sectionFooter"]
+}
+```
+
 **Supported keys:**
 
 - `padding`: Padding for all sides.

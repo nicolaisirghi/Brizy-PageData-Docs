@@ -309,6 +309,16 @@ The encoded object would look like this:
 }
 ```
 
+### Styles key
+
+The `styles` key is used to apply CSS classes to the `RichText` element.
+
+```json
+{
+  "styles": ["richtext"]
+}
+```
+
 ## DefaultValue for RichText
 
 ```json

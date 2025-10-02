@@ -122,6 +122,19 @@ The `horizontalAlign` property controls the horizontal alignment of the content 
 }
 ```
 
+### Styles key
+
+The `styles` key is used to apply CSS classes to the `Cloneable` element.
+It have two items:
+- `wrapper-clone` - for the `Cloneable` element
+- `wrapper-clone--[item-type]` - for the item type, it can be `button` or `icon`
+
+```json
+{
+  "styles": ["wrapper-clone", "wrapper-clone--button"]
+}
+```
+
 ## DefaultValue for Wrapper
 
 ```json

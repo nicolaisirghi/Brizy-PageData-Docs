@@ -98,6 +98,16 @@ At the moment we will focus only to the external link, but the other types will 
 - `linkExternalBlank`: Whether to open the link in a new tab ("on","off").
 - `linkExternalRel`: Make the link nofollow ("on","off").
 
+### Styles key
+
+The `styles` key is used to apply CSS classes to the `Image` element.
+
+```json
+{
+  "styles": ["image"]
+}
+```
+
 ## DefaultValue for Image
 
 ```json

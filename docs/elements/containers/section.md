@@ -24,6 +24,8 @@ Sections usually contain a list of nested items through the `value.items` key. T
 
 A `Section` is a fundamental layout block. It always contains one item: a `SectionItem`. This `SectionItem` wraps the actual content of the section.
 
+Note: It can contain multiple `SectionItem` elements when the `slider` key is enabled (slider is "on").
+
 ```json
 {
   "type": "Section",
@@ -49,6 +51,16 @@ The `value` object of a `Section` contains various keys that control the layout 
 - `padding`: Controls the internal spacing of the section.
 - `margin`: Controls the external spacing of the section.
 - `height`: Defines the section height and related behavior.
+
+### Styles key
+
+The `styles` key is used to apply CSS classes to the `Section` element.
+
+```json
+{
+  "styles": ["section"]
+}
+```
 
 ### Padding
 
@@ -214,6 +226,16 @@ Controls how wide the `SectionItem` content area is.
   "containerType": "boxed",
   "containerSize": 1200,
   "containerSizeSuffix": "px"
+}
+```
+
+### Styles key for SectionItem
+
+The `styles` key is used to apply CSS classes to the `SectionItem` element.
+
+```json
+{
+  "styles": ["section-item"]
 }
 ```
 

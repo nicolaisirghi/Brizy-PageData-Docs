@@ -117,6 +117,37 @@ The `zIndex` property controls the stacking order of the wrapper relative to oth
 }
 ```
 
+### Styles key
+
+The `styles` key is used to apply CSS classes to the `Wrapper` element.
+
+It have two items:
+
+- `wrapper` - for the `Wrapper` element
+- `wrapper--[item-type]` - for the item type, it can be `image`
+
+```json
+{
+  "styles": ["wrapper"]
+}
+```
+
+Example for Image:
+
+```json
+{
+  "styles": ["wrapper", "wrapper--image"]
+}
+```
+
+Example for Text:
+
+```json
+{
+  "styles": ["wrapper", "wrapper--text"]
+}
+```
+
 ## DefaultValue for Wrapper
 
 ```json

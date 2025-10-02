@@ -249,6 +249,16 @@ At the moment we will focus only to the external link, but the other types will 
 }
 ```
 
+### Styles key
+
+The `styles` key is used to apply CSS classes to the `Column` element.
+
+```json
+{
+  "styles": ["column"]
+}
+```
+
 ## DefaultValue for Column
 
 ```json
