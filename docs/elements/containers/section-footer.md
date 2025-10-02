@@ -32,7 +32,7 @@ The `styles` key is used to apply CSS classes to the `SectionFooter` element.
 
 ```json
 {
-  "styles": ["sectionFooter"]
+  "_styles": ["sectionFooter"]
 }
 ```
 

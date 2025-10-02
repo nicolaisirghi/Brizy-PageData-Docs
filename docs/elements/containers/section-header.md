@@ -49,9 +49,10 @@ The `SectionHeader` is a special section used for headers. It uses the same gene
 ### Styles key for SectionHeader
 
 The `styles` key is used to apply CSS classes to the `SectionHeader` element.
+
 ```json
 {
-  "styles": ["sectionHeader"]
+  "_styles": ["sectionHeader"]
 }
 ```
 
@@ -184,21 +185,23 @@ The `background` keys define the appearance of the section’s background, inclu
 }
 ```
 
-### Styles key for SectionHeaderItem 
+### Styles key for SectionHeaderItem
 
 The `styles` key is used to apply CSS classes to the `SectionHeaderItem` element.
+
 ```json
 {
-  "styles": ["sectionHeaderItem"]
+  "_styles": ["sectionHeaderItem"]
 }
 ```
 
 ### Styles key for SectionHeaderStickyItem
 
 The `styles` key is used to apply CSS classes to the `SectionHeaderStickyItem` element.
+
 ```json
 {
-  "styles": ["sectionHeaderStickyItem"]
+  "_styles": ["sectionHeaderStickyItem"]
 }
 ```
 

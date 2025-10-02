@@ -315,7 +315,7 @@ The `styles` key is used to apply CSS classes to the `RichText` element.
 
 ```json
 {
-  "styles": ["richtext"]
+  "_styles": ["richtext"]
 }
 ```
 

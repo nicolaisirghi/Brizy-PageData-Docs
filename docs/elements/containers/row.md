@@ -91,7 +91,7 @@ The `styles` key is used to apply CSS classes to the `Row` element.
 
 ```json
 {
-  "styles": ["row"]
+  "_styles": ["row"]
 }
 ```
 
@@ -99,7 +99,7 @@ If you want to hide the rows to be only the columns your style should like this:
 
 ```json
 {
-  "styles": ["row", "hide-row-borders", "padding-0"]
+  "_styles": ["row", "hide-row-borders", "padding-0"]
 }
 ```
 

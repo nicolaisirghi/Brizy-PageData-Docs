@@ -123,7 +123,7 @@ The `styles` key is used to apply CSS classes to the `Button` element.
 
 ```json
 {
-  "styles": ["button"]
+  "_styles": ["button"]
 }
 ```
 

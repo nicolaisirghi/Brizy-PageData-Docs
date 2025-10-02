@@ -104,7 +104,7 @@ The `styles` key is used to apply CSS classes to the `Image` element.
 
 ```json
 {
-  "styles": ["image"]
+  "_styles": ["image"]
 }
 ```
 

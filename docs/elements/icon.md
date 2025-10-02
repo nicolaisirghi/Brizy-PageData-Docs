@@ -101,7 +101,7 @@ The `styles` key is used to apply CSS classes to the `Icon` element.
 
 ```json
 {
-  "styles": ["icon"]
+  "_styles": ["icon"]
 }
 ```
 

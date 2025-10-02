@@ -128,7 +128,7 @@ It have two items:
 
 ```json
 {
-  "styles": ["wrapper"]
+  "_styles": ["wrapper"]
 }
 ```
 
@@ -136,7 +136,7 @@ Example for Image:
 
 ```json
 {
-  "styles": ["wrapper", "wrapper--image"]
+  "_styles": ["wrapper", "wrapper--image"]
 }
 ```
 
@@ -144,7 +144,7 @@ Example for Text:
 
 ```json
 {
-  "styles": ["wrapper", "wrapper--text"]
+  "_styles": ["wrapper", "wrapper--text"]
 }
 ```
 

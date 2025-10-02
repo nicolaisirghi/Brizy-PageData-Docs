@@ -58,7 +58,7 @@ The `styles` key is used to apply CSS classes to the `Section` element.
 
 ```json
 {
-  "styles": ["section"]
+  "_styles": ["section"]
 }
 ```
 
@@ -235,7 +235,7 @@ The `styles` key is used to apply CSS classes to the `SectionItem` element.
 
 ```json
 {
-  "styles": ["section-item"]
+  "_styles": ["section-item"]
 }
 ```
 

@@ -255,7 +255,7 @@ The `styles` key is used to apply CSS classes to the `Column` element.
 
 ```json
 {
-  "styles": ["column"]
+  "_styles": ["column"]
 }
 ```
 
