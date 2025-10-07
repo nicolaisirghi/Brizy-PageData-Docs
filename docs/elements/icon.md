@@ -84,6 +84,72 @@ The `Icon` element is used to display a visual icon within your layout. It suppo
 - `borderRadius`: Border radius for the icon, defined as a number in pixels (e.g., `10`). Note that this is applied only if the `borderRadiusType` is set to "custom".
 - `borderRadiusType`: Type of border radius ("square", "rounded", "custom").
 
+### Hover Effects
+
+The `Icon` element supports hover effects for background-related properties. These properties control how the icon appears when users hover over it.
+
+**Background hover keys:**
+
+- `hoverBgColorHex`: The background color of the icon on hover in hexadecimal format.
+- `hoverBgColorOpacity`: The opacity of the background color on hover, ranging from `0` (transparent) to `1` (opaque).
+- `hoverBgColorPalette`: A predefined background color palette option for hover state. Set to empty string for no palette.
+- `hoverBgColorType`: The type of background color on hover, which can be `solid`, `gradient`, or `none`.
+
+**Gradient hover keys:**
+
+- `hoverGradientActivePointer`: Pointer to the active gradient on hover.
+- `hoverGradientColorHex`: Hexadecimal color for the gradient on hover.
+- `hoverGradientColorOpacity`: Opacity of the gradient color on hover.
+- `hoverGradientColorPalette`: Named palette value for the gradient color on hover. Set to empty string if no palette is used.
+- `hoverGradientFinishPointer`: Pointer to the gradient finish color on hover.
+- `hoverGradientStartPointer`: Pointer to the gradient start color on hover.
+- `hoverGradientLinearDegree`: Degree of the linear gradient on hover (0-360).
+- `hoverGradientRadialDegree`: Degree of the radial gradient on hover (0-360).
+- `hoverGradientType`: Type of gradient on hover ("linear", "radial"). Defaults to "linear" if not set.
+
+**Border hover keys:**
+
+- `hoverBorderColorHex`: Hexadecimal border color on hover.
+- `hoverBorderColorOpacity`: Opacity of the border color on hover.
+- `hoverBorderColorPalette`: Named palette value for the border color on hover. Set to empty string if no palette is used.
+
+**Icon color hover keys:**
+
+- `hoverColorHex`: The color of the icon on hover in hexadecimal format.
+- `hoverColorOpacity`: The opacity of the icon color on hover, ranging from `0` (transparent) to `1` (opaque).
+- `hoverColorPalette`: A predefined color palette option for hover state. Set to empty string for no palette.
+
+**Box shadow hover keys:**
+
+- `hoverBoxShadow`: Box shadow for the icon on hover. ("", "on","outset")
+- `hoverBoxShadowColorHex`: Hexadecimal color for the box shadow on hover.
+- `hoverBoxShadowColorOpacity`: Opacity of the box shadow color on hover.
+- `hoverBoxShadowColorPalette`: Named palette value for the box shadow color on hover. Set to empty string if no palette is used.
+- `hoverBoxShadowBlur`: Blur radius for the box shadow on hover.
+- `hoverBoxShadowSpread`: Spread radius for the box shadow on hover.
+- `hoverBoxShadowVertical`: Vertical offset for the box shadow on hover.
+- `hoverBoxShadowHorizontal`: Horizontal offset for the box shadow on hover.
+
+**Transition keys:**
+
+- `hoverTransition`: Duration of the hover transition effect in milliseconds.
+- `hoverTransitionSuffix`: Unit for the hover transition (typically empty string).
+
+```json
+{
+  "hoverBgColorHex": "#e8f4fd",
+  "hoverBgColorOpacity": 0.8,
+  "hoverBgColorPalette": "color5",
+  "hoverColorHex": "#1a7bb8",
+  "hoverColorOpacity": 1,
+  "hoverColorPalette": "color3",
+  "hoverBorderColorHex": "#1a7bb8",
+  "hoverBorderColorOpacity": 1,
+  "hoverBorderColorPalette": "color3",
+  "hoverTransition": 300
+}
+```
+
 ### Link
 
 The `Icon` can also be linked to a URL, allowing the entire row to act as a clickable link:

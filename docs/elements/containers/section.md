@@ -229,6 +229,68 @@ Controls how wide the `SectionItem` content area is.
 }
 ```
 
+### Hover Effects for SectionItem
+
+The `SectionItem` element supports hover effects for background-related properties. These properties control how the section item appears when users hover over it.
+
+**Background hover keys:**
+
+- `hoverBgColorHex`: The background color of the section item on hover in hexadecimal format.
+- `hoverBgColorOpacity`: The opacity of the background color on hover, ranging from `0` (transparent) to `1` (opaque).
+- `hoverBgColorPalette`: A predefined background color palette option for hover state. Set to empty string for no palette.
+- `hoverBgColorType`: The type of background color on hover, which can be `solid`, `gradient`, or `none`.
+
+**Gradient hover keys:**
+
+- `hoverGradientActivePointer`: Pointer to the active gradient on hover.
+- `hoverGradientColorHex`: Hexadecimal color for the gradient on hover.
+- `hoverGradientColorOpacity`: Opacity of the gradient color on hover.
+- `hoverGradientColorPalette`: Named palette value for the gradient color on hover. Set to empty string if no palette is used.
+- `hoverGradientFinishPointer`: Pointer to the gradient finish color on hover.
+- `hoverGradientStartPointer`: Pointer to the gradient start color on hover.
+- `hoverGradientLinearDegree`: Degree of the linear gradient on hover (0-360).
+- `hoverGradientRadialDegree`: Degree of the radial gradient on hover (0-360).
+- `hoverGradientType`: Type of gradient on hover ("linear", "radial"). Defaults to "linear" if not set.
+
+**Border hover keys:**
+
+- `hoverBorderColorHex`: Hexadecimal border color on hover.
+- `hoverBorderColorOpacity`: Opacity of the border color on hover.
+- `hoverBorderColorPalette`: Named palette value for the border color on hover. Set to empty string if no palette is used.
+
+**Box shadow hover keys:**
+
+- `hoverBoxShadow`: Box shadow for the section item on hover. ("", "on","outset")
+- `hoverBoxShadowColorHex`: Hexadecimal color for the box shadow on hover.
+- `hoverBoxShadowColorOpacity`: Opacity of the box shadow color on hover.
+- `hoverBoxShadowColorPalette`: Named palette value for the box shadow color on hover. Set to empty string if no palette is used.
+- `hoverBoxShadowBlur`: Blur radius for the box shadow on hover.
+- `hoverBoxShadowSpread`: Spread radius for the box shadow on hover.
+- `hoverBoxShadowVertical`: Vertical offset for the box shadow on hover.
+- `hoverBoxShadowHorizontal`: Horizontal offset for the box shadow on hover.
+
+**Image hover keys:**
+
+- `hoverBgImageSrc`: URL of the background image on hover.
+- `hoverBgImageExtension`: File extension on hover ("jpg", "png", etc.)
+
+**Transition keys:**
+
+- `hoverTransition`: Duration of the hover transition effect in milliseconds.
+- `hoverTransitionSuffix`: Unit for the hover transition (typically empty string).
+
+```json
+{
+  "hoverBgColorHex": "#f8f9fa",
+  "hoverBgColorOpacity": 0.1,
+  "hoverBgColorPalette": "color1",
+  "hoverBorderColorHex": "#239ddb",
+  "hoverBorderColorOpacity": 1,
+  "hoverBorderColorPalette": "color3",
+  "hoverTransition": 300
+}
+```
+
 ### Styles key for SectionItem
 
 The `styles` key is used to apply CSS classes to the `SectionItem` element.

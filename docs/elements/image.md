@@ -87,6 +87,124 @@ The `Image` element allows you to display visual media in your layout. It suppor
 - `borderRadius`: Border radius for the icon, defined as a number in pixels (e.g., `10`). Note that this is applied only if the `borderRadiusType` is set to "custom".
 - `borderRadiusType`: Type of border radius ("square", "rounded", "custom").
 
+### Hover Effects
+
+The `Image` element supports hover effects for background-related properties. These properties control how the image appears when users hover over it.
+
+**Background hover keys:**
+
+- `hoverBgColorHex`: The background color of the image on hover in hexadecimal format.
+- `hoverBgColorOpacity`: The opacity of the background color on hover, ranging from `0` (transparent) to `1` (opaque).
+- `hoverBgColorPalette`: A predefined background color palette option for hover state. Set to empty string for no palette.
+- `hoverBgColorType`: The type of background color on hover, which can be `solid`, `gradient`, or `none`.
+
+**Gradient hover keys:**
+
+- `hoverGradientActivePointer`: Pointer to the active gradient on hover.
+- `hoverGradientColorHex`: Hexadecimal color for the gradient on hover.
+- `hoverGradientColorOpacity`: Opacity of the gradient color on hover.
+- `hoverGradientColorPalette`: Named palette value for the gradient color on hover. Set to empty string if no palette is used.
+- `hoverGradientFinishPointer`: Pointer to the gradient finish color on hover.
+- `hoverGradientStartPointer`: Pointer to the gradient start color on hover.
+- `hoverGradientLinearDegree`: Degree of the linear gradient on hover (0-360).
+- `hoverGradientRadialDegree`: Degree of the radial gradient on hover (0-360).
+- `hoverGradientType`: Type of gradient on hover ("linear", "radial"). Defaults to "linear" if not set.
+
+**Border hover keys:**
+
+- `hoverBorderColorHex`: Hexadecimal border color on hover.
+- `hoverBorderColorOpacity`: Opacity of the border color on hover.
+- `hoverBorderColorPalette`: Named palette value for the border color on hover. Set to empty string if no palette is used.
+
+**Box shadow hover keys:**
+
+- `hoverBoxShadow`: Box shadow for the image on hover. ("", "on","outset")
+- `hoverBoxShadowColorHex`: Hexadecimal color for the box shadow on hover.
+- `hoverBoxShadowColorOpacity`: Opacity of the box shadow color on hover.
+- `hoverBoxShadowColorPalette`: Named palette value for the box shadow color on hover. Set to empty string if no palette is used.
+- `hoverBoxShadowBlur`: Blur radius for the box shadow on hover.
+- `hoverBoxShadowSpread`: Spread radius for the box shadow on hover.
+- `hoverBoxShadowVertical`: Vertical offset for the box shadow on hover.
+- `hoverBoxShadowHorizontal`: Horizontal offset for the box shadow on hover.
+
+**Filter hover keys:**
+
+- `hoverImageHue`: The hue of the image on hover, defined as a number in degrees (0-360).
+- `hoverImageSaturation`: The saturation of the image on hover, defined as a number in percent (e.g., `100`).
+- `hoverImageBrightness`: The brightness of the image on hover, defined as a number in percent (e.g., `100`).
+- `hoverImageContrast`: The contrast of the image on hover, defined as a number in percent (e.g., `100`).
+
+**Image hover keys:**
+
+- `hoverImageSrc`: URL of the image on hover.
+- `hoverImageWidth` / `hoverImageHeight`: Image dimensions on hover.
+- `hoverImageExtension`: File extension on hover ("jpg", "png", etc.)
+- `hoverSizeType`: The type of size for the image on hover, which can be `"original"`or `"custom"`.
+- `hoverSize`: The size of the image on hover, defined as a number in percent (e.g., `100`).
+- `hoverWidth`: The width of the image on hover, defined as a number (e.g., `300`).
+- `hoverWidthSuffix`: The suffix for the width on hover (`"px"`,`"%"`).
+- `hoverHeight`: The height of the image on hover, defined as a number (e.g., `300`).
+- `hoverHeightSuffix`: The suffix for the height on hover (`"px"`,`"%"`).
+- `hoverPositionX`: The horizontal position of the image on hover, defined as a number in percent (e.g., `50`).
+- `hoverPositionY`: The vertical position of the image on hover, defined as a number in percent (e.g., `50`).
+- `hoverZoom`: The zoom level of the image on hover, defined as a number in percent (e.g., `150`).
+
+**Mask hover keys:**
+
+- `hoverMaskShape`: Shape of the mask on hover ("none", "circle", "square", etc.).
+- `hoverMaskSize`: Size of the mask on hover ("cover", "contain", "auto").
+- `hoverMaskPosition`: Position of the mask on hover ("center center", "50% 50%", etc.).
+- `hoverMaskRepeat`: Repeat behavior of the mask on hover ("no-repeat", "repeat", "repeat-x", "repeat-y").
+- `hoverMaskScale`: Scale of the mask on hover, defined as a number in percent (e.g., `50`).
+- `hoverMaskScaleSuffix`: Suffix for the mask scale on hover (e.g., "%").
+- `hoverMaskPositiony`: Vertical position of the mask on hover, defined as a number in percent (e.g., `3`).
+- `hoverMaskPositionySuffix`: Suffix for the vertical mask position on hover (e.g., "%").
+- `hoverMaskPositionx`: Horizontal position of the mask on hover, defined as a number in percent (e.g., `3`).
+- `hoverMaskPositionxSuffix`: Suffix for the horizontal mask position on hover (e.g., "%").
+- `hoverMaskCustomUploadImageSrc`: URL of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageExtension`: File extension of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageWidth` / `hoverMaskCustomUploadImageHeight`: Custom upload mask image dimensions on hover.
+- `hoverMaskCustomUploadPositionX` / `hoverMaskCustomUploadPositionY`: Position of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageType`: Type of the custom upload mask image on hover ("internal", "external").
+- `hoverMaskCustomUploadAlt`: Alt text for the custom upload mask image on hover.
+- `hoverMaskShadowColorHex`: Hexadecimal color for the mask shadow on hover.
+- `hoverMaskShadowColorOpacity`: Opacity of the mask shadow color on hover.
+- `hoverMaskShadowColorPalette`: Named palette value for the mask shadow color on hover. Set to empty string if no palette is used.
+- `hoverMaskShadowBlur`: Blur radius for the mask shadow on hover.
+- `hoverMaskShadowVertical`: Vertical offset for the mask shadow on hover.
+- `hoverMaskShadowHorizontal`: Horizontal offset for the mask shadow on hover.
+
+**Transition keys:**
+
+- `hoverTransition`: Duration of the hover transition effect in milliseconds.
+- `hoverTransitionSuffix`: Unit for the hover transition (typically empty string).
+
+```json
+{
+  "hoverBgColorHex": "#f0f8ff",
+  "hoverBgColorOpacity": 0.1,
+  "hoverBgColorPalette": "color1",
+  "hoverBorderColorHex": "#239ddb",
+  "hoverBorderColorOpacity": 1,
+  "hoverBorderColorPalette": "color3",
+  "hoverImageHue": 10,
+  "hoverImageSaturation": 120,
+  "hoverImageBrightness": 110,
+  "hoverImageContrast": 105,
+  "hoverImageSrc": "https://example.com/hover-image.jpg",
+  "hoverSizeType": "original",
+  "hoverSize": 110,
+  "hoverPositionX": 50,
+  "hoverPositionY": 50,
+  "hoverMaskShape": "circle",
+  "hoverMaskSize": "cover",
+  "hoverMaskPosition": "center center",
+  "hoverMaskScale": 60,
+  "hoverMaskScaleSuffix": "%",
+  "hoverTransition": 300
+}
+```
+
 ### Link
 
 The `Image` can also be linked to a URL, allowing the entire row to act as a clickable link:

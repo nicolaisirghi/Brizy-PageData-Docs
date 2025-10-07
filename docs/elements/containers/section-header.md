@@ -205,6 +205,122 @@ The `styles` key is used to apply CSS classes to the `SectionHeaderStickyItem` e
 }
 ```
 
+### Hover Effects for SectionHeaderItem
+
+The `SectionHeaderItem` element supports hover effects for background-related properties. These properties control how the section header item appears when users hover over it.
+
+**Background hover keys:**
+
+- `hoverBgColorHex`: The background color of the section header item on hover in hexadecimal format.
+- `hoverBgColorOpacity`: The opacity of the background color on hover, ranging from `0` (transparent) to `1` (opaque).
+- `hoverBgColorPalette`: A predefined background color palette option for hover state. Set to empty string for no palette.
+- `hoverBgColorType`: The type of background color on hover, which can be `solid`, `gradient`, or `none`.
+
+**Gradient hover keys:**
+
+- `hoverGradientActivePointer`: Pointer to the active gradient on hover.
+- `hoverGradientColorHex`: Hexadecimal color for the gradient on hover.
+- `hoverGradientColorOpacity`: Opacity of the gradient color on hover.
+- `hoverGradientColorPalette`: Named palette value for the gradient color on hover. Set to empty string if no palette is used.
+- `hoverGradientFinishPointer`: Pointer to the gradient finish color on hover.
+- `hoverGradientStartPointer`: Pointer to the gradient start color on hover.
+- `hoverGradientLinearDegree`: Degree of the linear gradient on hover (0-360).
+- `hoverGradientRadialDegree`: Degree of the radial gradient on hover (0-360).
+- `hoverGradientType`: Type of gradient on hover ("linear", "radial"). Defaults to "linear" if not set.
+
+**Border hover keys:**
+
+- `hoverBorderColorHex`: Hexadecimal border color on hover.
+- `hoverBorderColorOpacity`: Opacity of the border color on hover.
+- `hoverBorderColorPalette`: Named palette value for the border color on hover. Set to empty string if no palette is used.
+- `hoverBorderWidthType`: Type of border width on hover ("grouped","ungrouped").
+- `hoverBorderWidth`: If `hoverBorderWidthType` is "grouped", this is the width for all sides on hover.
+- `hoverBorderLeftWidth`, `hoverBorderRightWidth`, `hoverBorderBottomWidth`, `hoverBorderTopWidth`: Individual side border widths on hover. These are only used if `hoverBorderWidthType` is "ungrouped".
+- `hoverBorderStyle`: Style of the border on hover ("none" | "solid"| "dashed"| "dotted"| "double"| "groove"| "ridge"| "inset"| "outset").
+
+**Box shadow hover keys:**
+
+- `hoverBoxShadow`: Box shadow for the section header item on hover. ("", "on","outset")
+- `hoverBoxShadowColorHex`: Hexadecimal color for the box shadow on hover.
+- `hoverBoxShadowColorOpacity`: Opacity of the box shadow color on hover.
+- `hoverBoxShadowColorPalette`: Named palette value for the box shadow color on hover. Set to empty string if no palette is used.
+- `hoverBoxShadowBlur`: Blur radius for the box shadow on hover.
+- `hoverBoxShadowSpread`: Spread radius for the box shadow on hover.
+- `hoverBoxShadowVertical`: Vertical offset for the box shadow on hover.
+- `hoverBoxShadowHorizontal`: Horizontal offset for the box shadow on hover.
+
+**Image hover keys:**
+
+- `hoverBgImageSrc`: URL of the background image on hover.
+- `hoverBgImageExtension`: File extension on hover ("jpg", "png", etc.)
+
+**Filter hover keys:**
+
+- `hoverBrightness`: The brightness of the section header item on hover, defined as a number in percent (e.g., `100`).
+- `hoverHue`: The hue of the section header item on hover, defined as a number in degrees (0-360).
+- `hoverSaturation`: The saturation of the section header item on hover, defined as a number in percent (e.g., `100`).
+- `hoverContrast`: The contrast of the section header item on hover, defined as a number in percent (e.g., `100`).
+
+**Mask hover keys:**
+
+- `hoverMaskShape`: Shape of the mask on hover ("none", "circle", "square", etc.).
+- `hoverMaskSize`: Size of the mask on hover ("cover", "contain", "auto").
+- `hoverMaskPosition`: Position of the mask on hover ("center center", "50% 50%", etc.).
+- `hoverMaskRepeat`: Repeat behavior of the mask on hover ("no-repeat", "repeat", "repeat-x", "repeat-y").
+- `hoverMaskScale`: Scale of the mask on hover, defined as a number in percent (e.g., `50`).
+- `hoverMaskScaleSuffix`: Suffix for the mask scale on hover (e.g., "%").
+- `hoverMaskPositiony`: Vertical position of the mask on hover, defined as a number in percent (e.g., `3`).
+- `hoverMaskPositionySuffix`: Suffix for the vertical mask position on hover (e.g., "%").
+- `hoverMaskPositionx`: Horizontal position of the mask on hover, defined as a number in percent (e.g., `3`).
+- `hoverMaskPositionxSuffix`: Suffix for the horizontal mask position on hover (e.g., "%").
+- `hoverMaskCustomUploadImageSrc`: URL of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageExtension`: File extension of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageWidth` / `hoverMaskCustomUploadImageHeight`: Custom upload mask image dimensions on hover.
+- `hoverMaskCustomUploadPositionX` / `hoverMaskCustomUploadPositionY`: Position of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageType`: Type of the custom upload mask image on hover ("internal", "external").
+- `hoverMaskCustomUploadAlt`: Alt text for the custom upload mask image on hover.
+- `hoverMaskShadowColorHex`: Hexadecimal color for the mask shadow on hover.
+- `hoverMaskShadowColorOpacity`: Opacity of the mask shadow color on hover.
+- `hoverMaskShadowColorPalette`: Named palette value for the mask shadow color on hover. Set to empty string if no palette is used.
+- `hoverMaskShadowBlur`: Blur radius for the mask shadow on hover.
+- `hoverMaskShadowVertical`: Vertical offset for the mask shadow on hover.
+- `hoverMaskShadowHorizontal`: Horizontal offset for the mask shadow on hover.
+
+**Transition keys:**
+
+- `hoverTransition`: Duration of the hover transition effect in milliseconds.
+- `hoverTransitionSuffix`: Unit for the hover transition (typically empty string).
+
+```json
+{
+  "hoverBgColorHex": "#f8f9fa",
+  "hoverBgColorOpacity": 0.1,
+  "hoverBgColorPalette": "color1",
+  "hoverBorderColorHex": "#239ddb",
+  "hoverBorderColorOpacity": 1,
+  "hoverBorderColorPalette": "color3",
+  "hoverBorderWidthType": "grouped",
+  "hoverBorderWidth": 2,
+  "hoverBorderStyle": "solid",
+  "hoverBoxShadow": "on",
+  "hoverBoxShadowColorHex": "#000000",
+  "hoverBoxShadowColorOpacity": 0.2,
+  "hoverBoxShadowBlur": 4,
+  "hoverBoxShadowVertical": 2,
+  "hoverBoxShadowHorizontal": 1,
+  "hoverBrightness": 110,
+  "hoverHue": 10,
+  "hoverSaturation": 120,
+  "hoverContrast": 105,
+  "hoverMaskShape": "circle",
+  "hoverMaskSize": "cover",
+  "hoverMaskPosition": "center center",
+  "hoverMaskScale": 60,
+  "hoverMaskScaleSuffix": "%",
+  "hoverTransition": 300
+}
+```
+
 ### Width and Container Type
 
 Controls how wide the `SectionHeaderItem` content area is.
@@ -220,6 +336,122 @@ Controls how wide the `SectionHeaderItem` content area is.
   "containerType": "boxed",
   "containerSize": 1200,
   "containerSizeSuffix": "px"
+}
+```
+
+### Hover Effects for SectionHeaderStickyItem
+
+The `SectionHeaderStickyItem` element supports hover effects for background-related properties. These properties control how the section header sticky item appears when users hover over it.
+
+**Background hover keys:**
+
+- `hoverBgColorHex`: The background color of the section header sticky item on hover in hexadecimal format.
+- `hoverBgColorOpacity`: The opacity of the background color on hover, ranging from `0` (transparent) to `1` (opaque).
+- `hoverBgColorPalette`: A predefined background color palette option for hover state. Set to empty string for no palette.
+- `hoverBgColorType`: The type of background color on hover, which can be `solid`, `gradient`, or `none`.
+
+**Gradient hover keys:**
+
+- `hoverGradientActivePointer`: Pointer to the active gradient on hover.
+- `hoverGradientColorHex`: Hexadecimal color for the gradient on hover.
+- `hoverGradientColorOpacity`: Opacity of the gradient color on hover.
+- `hoverGradientColorPalette`: Named palette value for the gradient color on hover. Set to empty string if no palette is used.
+- `hoverGradientFinishPointer`: Pointer to the gradient finish color on hover.
+- `hoverGradientStartPointer`: Pointer to the gradient start color on hover.
+- `hoverGradientLinearDegree`: Degree of the linear gradient on hover (0-360).
+- `hoverGradientRadialDegree`: Degree of the radial gradient on hover (0-360).
+- `hoverGradientType`: Type of gradient on hover ("linear", "radial"). Defaults to "linear" if not set.
+
+**Border hover keys:**
+
+- `hoverBorderColorHex`: Hexadecimal border color on hover.
+- `hoverBorderColorOpacity`: Opacity of the border color on hover.
+- `hoverBorderColorPalette`: Named palette value for the border color on hover. Set to empty string if no palette is used.
+- `hoverBorderWidthType`: Type of border width on hover ("grouped","ungrouped").
+- `hoverBorderWidth`: If `hoverBorderWidthType` is "grouped", this is the width for all sides on hover.
+- `hoverBorderLeftWidth`, `hoverBorderRightWidth`, `hoverBorderBottomWidth`, `hoverBorderTopWidth`: Individual side border widths on hover. These are only used if `hoverBorderWidthType` is "ungrouped".
+- `hoverBorderStyle`: Style of the border on hover ("none" | "solid"| "dashed"| "dotted"| "double"| "groove"| "ridge"| "inset"| "outset").
+
+**Box shadow hover keys:**
+
+- `hoverBoxShadow`: Box shadow for the section header sticky item on hover. ("", "on","outset")
+- `hoverBoxShadowColorHex`: Hexadecimal color for the box shadow on hover.
+- `hoverBoxShadowColorOpacity`: Opacity of the box shadow color on hover.
+- `hoverBoxShadowColorPalette`: Named palette value for the box shadow color on hover. Set to empty string if no palette is used.
+- `hoverBoxShadowBlur`: Blur radius for the box shadow on hover.
+- `hoverBoxShadowSpread`: Spread radius for the box shadow on hover.
+- `hoverBoxShadowVertical`: Vertical offset for the box shadow on hover.
+- `hoverBoxShadowHorizontal`: Horizontal offset for the box shadow on hover.
+
+**Image hover keys:**
+
+- `hoverBgImageSrc`: URL of the background image on hover.
+- `hoverBgImageExtension`: File extension on hover ("jpg", "png", etc.)
+
+**Filter hover keys:**
+
+- `hoverBrightness`: The brightness of the section header sticky item on hover, defined as a number in percent (e.g., `100`).
+- `hoverHue`: The hue of the section header sticky item on hover, defined as a number in degrees (0-360).
+- `hoverSaturation`: The saturation of the section header sticky item on hover, defined as a number in percent (e.g., `100`).
+- `hoverContrast`: The contrast of the section header sticky item on hover, defined as a number in percent (e.g., `100`).
+
+**Mask hover keys:**
+
+- `hoverMaskShape`: Shape of the mask on hover ("none", "circle", "square", etc.).
+- `hoverMaskSize`: Size of the mask on hover ("cover", "contain", "auto").
+- `hoverMaskPosition`: Position of the mask on hover ("center center", "50% 50%", etc.).
+- `hoverMaskRepeat`: Repeat behavior of the mask on hover ("no-repeat", "repeat", "repeat-x", "repeat-y").
+- `hoverMaskScale`: Scale of the mask on hover, defined as a number in percent (e.g., `50`).
+- `hoverMaskScaleSuffix`: Suffix for the mask scale on hover (e.g., "%").
+- `hoverMaskPositiony`: Vertical position of the mask on hover, defined as a number in percent (e.g., `3`).
+- `hoverMaskPositionySuffix`: Suffix for the vertical mask position on hover (e.g., "%").
+- `hoverMaskPositionx`: Horizontal position of the mask on hover, defined as a number in percent (e.g., `3`).
+- `hoverMaskPositionxSuffix`: Suffix for the horizontal mask position on hover (e.g., "%").
+- `hoverMaskCustomUploadImageSrc`: URL of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageExtension`: File extension of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageWidth` / `hoverMaskCustomUploadImageHeight`: Custom upload mask image dimensions on hover.
+- `hoverMaskCustomUploadPositionX` / `hoverMaskCustomUploadPositionY`: Position of the custom upload mask image on hover.
+- `hoverMaskCustomUploadImageType`: Type of the custom upload mask image on hover ("internal", "external").
+- `hoverMaskCustomUploadAlt`: Alt text for the custom upload mask image on hover.
+- `hoverMaskShadowColorHex`: Hexadecimal color for the mask shadow on hover.
+- `hoverMaskShadowColorOpacity`: Opacity of the mask shadow color on hover.
+- `hoverMaskShadowColorPalette`: Named palette value for the mask shadow color on hover. Set to empty string if no palette is used.
+- `hoverMaskShadowBlur`: Blur radius for the mask shadow on hover.
+- `hoverMaskShadowVertical`: Vertical offset for the mask shadow on hover.
+- `hoverMaskShadowHorizontal`: Horizontal offset for the mask shadow on hover.
+
+**Transition keys:**
+
+- `hoverTransition`: Duration of the hover transition effect in milliseconds.
+- `hoverTransitionSuffix`: Unit for the hover transition (typically empty string).
+
+```json
+{
+  "hoverBgColorHex": "#f8f9fa",
+  "hoverBgColorOpacity": 0.1,
+  "hoverBgColorPalette": "color1",
+  "hoverBorderColorHex": "#239ddb",
+  "hoverBorderColorOpacity": 1,
+  "hoverBorderColorPalette": "color3",
+  "hoverBorderWidthType": "grouped",
+  "hoverBorderWidth": 2,
+  "hoverBorderStyle": "solid",
+  "hoverBoxShadow": "on",
+  "hoverBoxShadowColorHex": "#000000",
+  "hoverBoxShadowColorOpacity": 0.2,
+  "hoverBoxShadowBlur": 4,
+  "hoverBoxShadowVertical": 2,
+  "hoverBoxShadowHorizontal": 1,
+  "hoverBrightness": 110,
+  "hoverHue": 10,
+  "hoverSaturation": 120,
+  "hoverContrast": 105,
+  "hoverMaskShape": "circle",
+  "hoverMaskSize": "cover",
+  "hoverMaskPosition": "center center",
+  "hoverMaskScale": 60,
+  "hoverMaskScaleSuffix": "%",
+  "hoverTransition": 300
 }
 ```
 

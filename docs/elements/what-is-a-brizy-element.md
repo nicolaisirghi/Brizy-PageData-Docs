@@ -73,7 +73,10 @@ To define **hover styles**, you also use prefixed keys, but **only for desktop**
 - `bgColorHex` → `hoverBgColorHex`
 - `borderColorHex` → `hoverBorderColorHex`
 
-This allows you to change styling when the user hovers with their mouse on desktop devices.
+This allows you to change styling when the user hovers with their mouse on desktop devices.To elements that support hover states inside toolbar.ts file have the key `states` that is an array of all possible states. By default, the states is only `NORMAL`. There are two more states: `HOVER` and `ACTIVE`.
+For each element documentation you will find the states that are supported.
+
+NOTE: The hover and device keys can be missing in the default value for elements, but the even if they are missing they are valid and will be used by the editor.
 
 ---
 
